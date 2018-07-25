@@ -1,0 +1,2 @@
+webpackJsonp([17],{1259:function(e,t,n){var a=n(5),r=n(75),o=n(550).PageRenderer;o.__esModule&&(o=o.default);var i=r({displayName:"WrappedPageRenderer",getInitialState:function(){return{content:n(1277)}},componentWillMount:function(){},render:function(){return a.createElement(o,Object.assign({},this.props,{content:this.state.content}))}});i.__catalog_loader__=!0,e.exports=i},1277:function(e,t){e.exports="This is where the magic happens.\n"}});
+//# sourceMappingURL=17.223227a5.chunk.js.map
