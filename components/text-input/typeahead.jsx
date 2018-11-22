@@ -1,16 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import {
-	AsyncTypeahead as _AsyncTypeahead,
-	Typeahead as _Typeahead,
-	Token as _Token,
-	Menu as _Menu,
-	MenuItem as _MenuItem,
-} from 'react-bootstrap-typeahead';
+import { Token as _Token, Menu as _Menu, MenuItem as _MenuItem } from 'react-bootstrap-typeahead';
 import { SolidTriangleIcon as _SolidTriangleIcon } from '../icons';
 import { BootstrapContainer } from '../utils';
 import './custom.scss';
+import { Typeahead as _BestTypeahead } from './custom-typeahead';
 
 const SolidTriangleIcon = styled(_SolidTriangleIcon)`
 	transform: rotateZ(90deg);
@@ -19,7 +14,7 @@ const SolidTriangleIcon = styled(_SolidTriangleIcon)`
 	width: 8px;
 `;
 
-const StyledAsyncTypeahead = styled(_AsyncTypeahead)`
+const StyledAsyncTypeahead = styled(_BestTypeahead)`
 	.rbt-highlight-text {
 		padding: 0;
 		font-weight: bold;
@@ -33,7 +28,7 @@ const StyledAsyncTypeahead = styled(_AsyncTypeahead)`
 	}
 `;
 
-const StyledTypeahead = styled(_Typeahead)`
+const StyledTypeahead = styled(_BestTypeahead)`
 	.rbt-highlight-text {
 		padding: 0;
 		font-weight: bold;

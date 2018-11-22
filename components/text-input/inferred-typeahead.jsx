@@ -9,6 +9,7 @@ const StyledTypeahead = mapFromInnerRef(styled(mapToInnerRef(props => <Typeahead
 	&& .rbt-input,
 	&& .rbt-input:focus {
 		${props => (props.inferred ? 'color: #006099' : '')};
+		padding-right: 4px;
 	}
 `);
 
